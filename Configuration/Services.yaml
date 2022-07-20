@@ -1,0 +1,29 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  Treupo\SysNoteWidgets\:
+    resource: '../Classes/*'
+
+  Treupo\SysNoteWidgets\Widgets\Provider\PagesWithInternalNoteToDosDataProvider:
+    arguments:
+      $limit: 8
+
+  dashboard.widget.sys_notes.todos:
+    class: 'Treupo\SysNoteWidgets\Widgets\PageOverviewWidget'
+    arguments:
+      $view: '@dashboard.views.widget'
+      $dataProvider: '@Treupo\SysNoteWidgets\Widgets\Provider\PagesWithInternalNoteToDosDataProvider'
+      $options:
+        template: 'Widget/PagesWithInternalNoteToDos'
+    tags:
+      - name: dashboard.widget
+        identifier: 'sys_note_todos'
+        groupNames: 'sys_note_widgets'
+        title: 'LLL:EXT:sys_note_widgets/Resources/Private/Language/locallang.xlf:widget.pagesWithInternalNoteToDos.title'
+        description: 'LLL:EXT:sys_note_widgets/Resources/Private/Language/locallang.xlf:widget.pagesWithInternalNoteToDos.description'
+        iconIdentifier: 'content-note'
+        height: 'large'
+        width: 'medium'

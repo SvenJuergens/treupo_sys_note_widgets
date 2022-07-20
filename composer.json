@@ -14,16 +14,22 @@
     "require": {
       "typo3/cms-core": "^11.5",
       "typo3/cms-dashboard": "^11.5",
-      "typo3/cms-seo": "^^11.5"
+      "typo3/cms-sys-note": "^11.5"
     },
     "autoload": {
       "psr-4": {
-        "Treupo\\SysNoteWidgets": "Classes/"
+        "Treupo\\SysNoteWidgets\\": "Classes/"
       }
     },
     "extra": {
       "typo3/cms": {
         "extension-key": "sys_note_widgets"
       }
+    },
+    "config": {
+        "allow-plugins": {
+            "typo3/class-alias-loader": true,
+            "typo3/cms-composer-installers": true
+        }
     }
 }

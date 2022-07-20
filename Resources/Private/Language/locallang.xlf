@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+	<file t3:id="1582293960" source-language="en" datatype="plaintext" original="EXT:sys_note_widgets/Resources/Private/Language/locallang.xlf" date="2020-02-21T14:06:14Z" product-name="sys_note_widgets">
+		<header/>
+		<body>
+			<trans-unit id="widget_group.sys_note_widget.title" xml:space="preserve">
+				<source>Sys Notes</source>
+			</trans-unit>
+			<trans-unit id="widget.pagesWithInternalNoteToDos.title" xml:space="preserve">
+				<source>Sys notes with category ToDo</source>
+			</trans-unit>
+			<trans-unit id="widget.pagesWithInternalNoteToDos.description" xml:space="preserve">
+				<source>Shows a list of all pages which has sys_notes with the category "ToDo" </source>
+			</trans-unit>
+			<trans-unit id="lastChange" xml:space="preserve">
+				<source>Last change</source>
+			</trans-unit>
+			<trans-unit id="page" xml:space="preserve">
+				<source>Page</source>
+			</trans-unit>
+			<trans-unit id="created" xml:space="preserve">
+				<source>Created</source>
+			</trans-unit>
+			<trans-unit id="subject" xml:space="preserve">
+				<source>Subject</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -10,7 +10,7 @@ $EM_CONF[$_EXTKEY] = [
         'depends' => [
             'typo3' => '11.5.0 - 11.9.99',
             'dashboard' => '11.5.0 - 11.9.99',
-            'seo' => '11.5.0 - 11.9.99'
+            'sys_note' => '11.5.0 - 11.9.99'
         ],
         'conflicts' => [
         ],
@@ -18,7 +18,7 @@ $EM_CONF[$_EXTKEY] = [
     ],
     'autoload' => [
         'psr-4' => [
-            'Treupo\\SysNoteWidgets' => 'Classes'
+            'Treupo\\SysNoteWidgets\\' => 'Classes/'
         ]
     ],
 ];
