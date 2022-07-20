@@ -11,13 +11,69 @@ services:
     arguments:
       $limit: 8
 
+
+  dashboard.widget.sys_notes.instructions:
+    class: 'Treupo\SysNoteWidgets\Widgets\PageOverviewWidget'
+    arguments:
+      $view: '@dashboard.views.widget'
+      $dataProvider: '@Treupo\SysNoteWidgets\Widgets\Provider\PagesWithInternalNoteToDosDataProvider'
+      $options:
+        template: 'Widget/PagesWithInternalNote'
+        category: 0
+    tags:
+      - name: dashboard.widget
+        identifier: 'sys_note_instructions'
+        groupNames: 'sys_note_widgets'
+        title: 'LLL:EXT:sys_note_widgets/Resources/Private/Language/locallang.xlf:widget.pagesWithInternalNoteInstructions.title'
+        description: 'LLL:EXT:sys_note_widgets/Resources/Private/Language/locallang.xlf:widget.pagesWithInternalNoteInstructions.description'
+        iconIdentifier: 'content-note'
+        height: 'large'
+        width: 'medium'
+
+  dashboard.widget.sys_notes.template:
+    class: 'Treupo\SysNoteWidgets\Widgets\PageOverviewWidget'
+    arguments:
+      $view: '@dashboard.views.widget'
+      $dataProvider: '@Treupo\SysNoteWidgets\Widgets\Provider\PagesWithInternalNoteToDosDataProvider'
+      $options:
+        template: 'Widget/PagesWithInternalNote'
+        category: 2
+    tags:
+      - name: dashboard.widget
+        identifier: 'sys_note_template'
+        groupNames: 'sys_note_widgets'
+        title: 'LLL:EXT:sys_note_widgets/Resources/Private/Language/locallang.xlf:widget.pagesWithInternalNoteTemplate.title'
+        description: 'LLL:EXT:sys_note_widgets/Resources/Private/Language/locallang.xlf:widget.pagesWithInternalNoteTemplate.description'
+        iconIdentifier: 'content-note'
+        height: 'large'
+        width: 'medium'
+
+  dashboard.widget.sys_notes.notes:
+    class: 'Treupo\SysNoteWidgets\Widgets\PageOverviewWidget'
+    arguments:
+      $view: '@dashboard.views.widget'
+      $dataProvider: '@Treupo\SysNoteWidgets\Widgets\Provider\PagesWithInternalNoteToDosDataProvider'
+      $options:
+        template: 'Widget/PagesWithInternalNote'
+        category: 3
+    tags:
+      - name: dashboard.widget
+        identifier: 'sys_note_notes'
+        groupNames: 'sys_note_widgets'
+        title: 'LLL:EXT:sys_note_widgets/Resources/Private/Language/locallang.xlf:widget.pagesWithInternalNoteNotes.title'
+        description: 'LLL:EXT:sys_note_widgets/Resources/Private/Language/locallang.xlf:widget.pagesWithInternalNoteNotes.description'
+        iconIdentifier: 'content-note'
+        height: 'large'
+        width: 'medium'
+
   dashboard.widget.sys_notes.todos:
     class: 'Treupo\SysNoteWidgets\Widgets\PageOverviewWidget'
     arguments:
       $view: '@dashboard.views.widget'
       $dataProvider: '@Treupo\SysNoteWidgets\Widgets\Provider\PagesWithInternalNoteToDosDataProvider'
       $options:
-        template: 'Widget/PagesWithInternalNoteToDos'
+        template: 'Widget/PagesWithInternalNote'
+        category: 4
     tags:
       - name: dashboard.widget
         identifier: 'sys_note_todos'

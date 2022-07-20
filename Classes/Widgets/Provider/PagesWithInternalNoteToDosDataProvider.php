@@ -12,18 +12,18 @@ use TYPO3\CMS\Extbase\Utility\DebuggerUtility;
 class PagesWithInternalNoteToDosDataProvider implements PageProviderInterface
 {
     /**
-     * @var array
+     * @var int
      */
-    private $excludedDoktypes;
+    private int $category;
 
     /**
      * @var int
      */
-    private $limit;
+    private int $limit;
 
-    public function __construct(int $limit)
+    public function __construct(int $category, int $limit)
     {
-        // $this->excludedDoktypes = $excludedDoktypes;
+        $this->category = $category;
         $this->limit = $limit ?: 5;
     }
 
@@ -32,9 +32,8 @@ class PagesWithInternalNoteToDosDataProvider implements PageProviderInterface
         $queryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)->getQueryBuilderForTable('sys_note');
 
         $constraints = [
-            // $queryBuilder->expr()->notIn('doktype', $this->excludedDoktypes),
             $queryBuilder->expr()->orX(
-                $queryBuilder->expr()->eq('category', $queryBuilder->createNamedParameter('4'))
+                $queryBuilder->expr()->eq('category', $queryBuilder->createNamedParameter($this->category))
             ),
         ];
 
