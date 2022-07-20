@@ -1,0 +1,29 @@
+{
+    "name": "treupo/sys_note_widgets",
+    "type": "typo3-cms-extension",
+    "description": "Widgets with a list of all sys_note's",
+    "homepage": "https://typo3.org",
+    "license": "GPL-2.0-or-later",
+    "version": "1.0.1",
+    "authors": [
+      {
+        "name": "Philipp Kuhlmay",
+        "role": "Developer"
+      }
+    ],
+    "require": {
+      "typo3/cms-core": "^11.5",
+      "typo3/cms-dashboard": "^11.5",
+      "typo3/cms-seo": "^^11.5"
+    },
+    "autoload": {
+      "psr-4": {
+        "Treupo\\SysNoteWidgets": "Classes/"
+      }
+    },
+    "extra": {
+      "typo3/cms": {
+        "extension-key": "sys_note_widgets"
+      }
+    }
+}
