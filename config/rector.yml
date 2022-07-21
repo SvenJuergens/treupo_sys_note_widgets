@@ -1,0 +1,9 @@
+parameters:
+  sets:
+    - 'code-quality'
+    - 'dead-code'
+    - 'php73'
+    - 'php74'
+    - 'php80'
+    - 'typo310'
+    - 'typo311'
