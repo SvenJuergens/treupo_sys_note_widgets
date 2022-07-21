@@ -6,6 +6,13 @@
 			<trans-unit id="widget_group.sys_note_widget.title" xml:space="preserve">
 				<source>Sys Notes</source>
 			</trans-unit>
+			<!-- Default -->
+			<trans-unit id="widget.pagesWithInternalNoteDefault.title" xml:space="preserve">
+				<source>Sys notes with category Default</source>
+			</trans-unit>
+			<trans-unit id="widget.pagesWithInternalNoteDefault.description" xml:space="preserve">
+				<source>Shows a list of all pages which has sys_notes with the category "Default" </source>
+			</trans-unit>
 			<!-- ToDos -->
 			<trans-unit id="widget.pagesWithInternalNoteToDos.title" xml:space="preserve">
 				<source>Sys notes with category ToDo</source>

@@ -7,6 +7,24 @@ services:
   Treupo\SysNoteWidgets\:
     resource: '../Classes/*'
 
+  dashboard.widget.sys_notes.default:
+    class: 'Treupo\SysNoteWidgets\Widgets\PageOverviewWidget'
+    arguments:
+      $view: '@dashboard.views.widget'
+      $dataProvider: '@Treupo\SysNoteWidgets\Widgets\Provider\PagesWithInternalNoteToDosDataProvider'
+      $options:
+        category: 0
+        template: 'Widget/PagesWithInternalNote'
+    tags:
+      - name: dashboard.widget
+        identifier: 'sys_note_default'
+        groupNames: 'sys_note_widgets'
+        title: 'LLL:EXT:sys_note_widgets/Resources/Private/Language/locallang.xlf:widget.pagesWithInternalNoteDefault.title'
+        description: 'LLL:EXT:sys_note_widgets/Resources/Private/Language/locallang.xlf:widget.pagesWithInternalNoteDefault.description'
+        iconIdentifier: 'content-note'
+        height: 'medium'
+        width: 'medium'
+
   dashboard.widget.sys_notes.instructions:
     class: 'Treupo\SysNoteWidgets\Widgets\PageOverviewWidget'
     arguments:
@@ -22,7 +40,7 @@ services:
         title: 'LLL:EXT:sys_note_widgets/Resources/Private/Language/locallang.xlf:widget.pagesWithInternalNoteInstructions.title'
         description: 'LLL:EXT:sys_note_widgets/Resources/Private/Language/locallang.xlf:widget.pagesWithInternalNoteInstructions.description'
         iconIdentifier: 'content-note'
-        height: 'large'
+        height: 'medium'
         width: 'medium'
 
   dashboard.widget.sys_notes.template:
@@ -40,7 +58,7 @@ services:
         title: 'LLL:EXT:sys_note_widgets/Resources/Private/Language/locallang.xlf:widget.pagesWithInternalNoteTemplate.title'
         description: 'LLL:EXT:sys_note_widgets/Resources/Private/Language/locallang.xlf:widget.pagesWithInternalNoteTemplate.description'
         iconIdentifier: 'content-note'
-        height: 'large'
+        height: 'medium'
         width: 'medium'
 
   dashboard.widget.sys_notes.notes:
@@ -58,7 +76,7 @@ services:
         title: 'LLL:EXT:sys_note_widgets/Resources/Private/Language/locallang.xlf:widget.pagesWithInternalNoteNotes.title'
         description: 'LLL:EXT:sys_note_widgets/Resources/Private/Language/locallang.xlf:widget.pagesWithInternalNoteNotes.description'
         iconIdentifier: 'content-note'
-        height: 'large'
+        height: 'medium'
         width: 'medium'
 
   dashboard.widget.sys_notes.todos:
@@ -76,5 +94,5 @@ services:
         title: 'LLL:EXT:sys_note_widgets/Resources/Private/Language/locallang.xlf:widget.pagesWithInternalNoteToDos.title'
         description: 'LLL:EXT:sys_note_widgets/Resources/Private/Language/locallang.xlf:widget.pagesWithInternalNoteToDos.description'
         iconIdentifier: 'content-note'
-        height: 'large'
+        height: 'medium'
         width: 'medium'
