@@ -6,11 +6,33 @@
 			<trans-unit id="widget_group.sys_note_widget.title" xml:space="preserve">
 				<source>Sys Notes</source>
 			</trans-unit>
+			<!-- ToDos -->
 			<trans-unit id="widget.pagesWithInternalNoteToDos.title" xml:space="preserve">
 				<source>Sys notes with category ToDo</source>
 			</trans-unit>
 			<trans-unit id="widget.pagesWithInternalNoteToDos.description" xml:space="preserve">
 				<source>Shows a list of all pages which has sys_notes with the category "ToDo" </source>
+			</trans-unit>
+			<!-- Template -->
+			<trans-unit id="widget.pagesWithInternalNoteTemplate.title" xml:space="preserve">
+				<source>Sys notes with category Template</source>
+			</trans-unit>
+			<trans-unit id="widget.pagesWithInternalNoteTemplate.description" xml:space="preserve">
+				<source>Shows a list of all pages which has sys_notes with the category "Template" </source>
+			</trans-unit>
+			<!-- Notes -->
+			<trans-unit id="widget.pagesWithInternalNoteNotes.title" xml:space="preserve">
+				<source>Sys notes with category Notes</source>
+			</trans-unit>
+			<trans-unit id="widget.pagesWithInternalNoteNotes.description" xml:space="preserve">
+				<source>Shows a list of all pages which has sys_notes with the category "Notes" </source>
+			</trans-unit>
+			<!-- Instructions -->
+			<trans-unit id="widget.pagesWithInternalNoteInstructions.title" xml:space="preserve">
+				<source>Sys notes with category Instructions</source>
+			</trans-unit>
+			<trans-unit id="widget.pagesWithInternalNoteInstructions.description" xml:space="preserve">
+				<source>Shows a list of all pages which has sys_notes with the category "Instructions" </source>
 			</trans-unit>
 			<trans-unit id="lastChange" xml:space="preserve">
 				<source>Last change</source>

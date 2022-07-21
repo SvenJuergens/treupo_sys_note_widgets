@@ -1,0 +1,12 @@
+div[data-widget-key="sys_note_todos"] .widget-content-title{
+    background-color: #d1e2bd;
+}
+div[data-widget-key="sys_note_instructions"] .widget-content-title{
+    background-color: #fff;
+}
+div[data-widget-key="sys_note_notes"] .widget-content-title{
+    background-color: #f9f9f9;
+}
+div[data-widget-key="sys_note_template"] .widget-content-title{
+    background-color: rgb(251, 239, 221);
+}

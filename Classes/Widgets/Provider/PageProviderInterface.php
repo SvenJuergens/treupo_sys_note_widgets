@@ -9,5 +9,5 @@ interface PageProviderInterface
     /**
      * @return array
      */
-    public function getPages(): array;
+    public function getPages(int $category): array;
 }

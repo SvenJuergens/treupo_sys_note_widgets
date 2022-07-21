@@ -10,7 +10,7 @@ use TYPO3\CMS\Dashboard\Widgets\WidgetConfigurationInterface;
 use TYPO3\CMS\Dashboard\Widgets\WidgetInterface;
 use TYPO3\CMS\Fluid\View\StandaloneView;
 
-class PageOverviewWidget implements WidgetInterface
+class PageOverviewWidget implements WidgetInterface, AdditionalCssInterface
 {
     /**
      * @var WidgetConfigurationInterface
@@ -28,11 +28,6 @@ class PageOverviewWidget implements WidgetInterface
     private $view;
 
     /**
-     * @var null
-     */
-    private $buttonProvider;
-    
-    /**
      * @var array
      */
     private $options;
@@ -41,13 +36,11 @@ class PageOverviewWidget implements WidgetInterface
         WidgetConfigurationInterface $configuration,
         PageProviderInterface $dataProvider,
         StandaloneView $view,
-        $buttonProvider = null,
         array $options = []
     ) {
         $this->configuration = $configuration;
         $this->dataProvider = $dataProvider;
         $this->view = $view;
-        $this->buttonProvider = $buttonProvider;
         $this->options = array_merge(
             [
                 'template' => 'Widget/ExtendedListWidget',
@@ -61,9 +54,8 @@ class PageOverviewWidget implements WidgetInterface
         $this->view->setTemplate($this->options['template']);
 
         $this->view->assignMultiple([
-            'pages' => $this->dataProvider->getPages(),
+            'pages' => $this->dataProvider->getPages($this->options['category']),
             'options' => $this->options,
-            'button' => $this->buttonProvider,
             'configuration' => $this->configuration,
             'dateFormat' => $GLOBALS['TYPO3_CONF_VARS']['SYS']['ddmmyy'],
             'timeFormat' => $GLOBALS['TYPO3_CONF_VARS']['SYS']['hhmm'],
@@ -74,5 +66,12 @@ class PageOverviewWidget implements WidgetInterface
     protected function getBackendUser(): BackendUserAuthentication
     {
         return $GLOBALS['BE_USER'];
+    }
+
+    public function getCssFiles(): array
+    {
+        return [
+            'EXT:sys_note_widgets/Resources/Public/Css/widgets.css'
+        ];
     }
 }

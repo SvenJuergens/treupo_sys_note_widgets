@@ -4,7 +4,7 @@
     "description": "Widgets with a list of all sys_note's",
     "homepage": "https://typo3.org",
     "license": "GPL-2.0-or-later",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "authors": [
       {
         "name": "Philipp Kuhlmay",

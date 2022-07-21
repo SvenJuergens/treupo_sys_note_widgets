@@ -13,7 +13,7 @@
             </tr>
             <f:for each="{pages}" as="page">
                 <tr>
-                    <td><strong>uid: {page.uid}</strong><br />TODOpagetitle</td>
+                    <td><strong>pid: {page.pid}</strong><br />TODOpagetitle</td>
                     <td><strong><f:format.crop maxCharacters="20">{page.subject}</f:format.crop></strong><br /><f:format.crop maxCharacters="50">{page.message}</f:format.crop></td>
                     <td><f:format.date format="{dateFormat} {timeFormat}">{page.crdate}</f:format.date></td>
                     <td class="text-right">
