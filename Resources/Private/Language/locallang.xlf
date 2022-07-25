@@ -47,11 +47,17 @@
 			<trans-unit id="page" xml:space="preserve">
 				<source>Page</source>
 			</trans-unit>
+			<trans-unit id="pageid" xml:space="preserve">
+				<source>Page ID</source>
+			</trans-unit>
 			<trans-unit id="created" xml:space="preserve">
 				<source>Created</source>
 			</trans-unit>
 			<trans-unit id="subject" xml:space="preserve">
 				<source>Subject</source>
+			</trans-unit>
+			<trans-unit id="subjectmessage" xml:space="preserve">
+				<source>Subject and message</source>
 			</trans-unit>
 		</body>
 	</file>
