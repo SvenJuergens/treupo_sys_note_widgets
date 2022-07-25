@@ -4,7 +4,7 @@
     "description": "Widgets with a list of all sys_note's",
     "homepage": "https://typo3.org",
     "license": "GPL-2.0-or-later",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "authors": [
       {
         "name": "Philipp Kuhlmay",
@@ -12,9 +12,9 @@
       }
     ],
     "require": {
-      "typo3/cms-core": "^11.5",
-      "typo3/cms-dashboard": "^11.5",
-      "typo3/cms-sys-note": "^11.5"
+      "typo3/cms-core": "^10.4 || ^11.5",
+      "typo3/cms-dashboard": "^10.4 || ^11.5",
+      "typo3/cms-sys-note": "^10.4 || ^11.5"
     },
     "autoload": {
       "psr-4": {
