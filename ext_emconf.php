@@ -5,12 +5,12 @@ $EM_CONF[$_EXTKEY] = [
     'category' => 'be',
     'author' => 'Philipp Kuhlmay',
     'state' => 'stable',
-    'version' => '1.2.0',
+    'version' => '1.2.1',
     'constraints' => [
         'depends' => [
-            'typo3' => '10.4.0 - 11.9.99',
-            'dashboard' => '10.4.0 - 11.9.99',
-            'sys_note' => '10.4.0 - 11.9.99'
+            'typo3' => '10.4.0 - 12.9.99',
+            'dashboard' => '10.4.0 - 12.9.99',
+            'sys_note' => '10.4.0 - 12.9.99'
         ],
         'conflicts' => [
         ],
