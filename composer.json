@@ -11,9 +11,9 @@
       }
     ],
     "require": {
-      "typo3/cms-core": "^10.4 || ^11.5",
-      "typo3/cms-dashboard": "^10.4 || ^11.5",
-      "typo3/cms-sys-note": "^10.4 || ^11.5"
+      "typo3/cms-core": "^10.4 || ^11.5 || ^12.4",
+      "typo3/cms-dashboard": "^10.4 || ^11.5|| ^12.4",
+      "typo3/cms-sys-note": "^10.4 || ^11.5|| ^12.4"
     },
     "autoload": {
       "psr-4": {
