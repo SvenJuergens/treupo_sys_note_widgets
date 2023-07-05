@@ -5,30 +5,39 @@
     "homepage": "https://typo3.org",
     "license": "GPL-2.0-or-later",
     "authors": [
-      {
-        "name": "Philipp Kuhlmay",
-        "role": "Developer"
-      }
+        {
+            "name": "Philipp Kuhlmay",
+            "role": "Developer"
+        }
     ],
     "require": {
-      "typo3/cms-core": "^10.4 || ^11.5 || ^12.4",
-      "typo3/cms-dashboard": "^10.4 || ^11.5|| ^12.4",
-      "typo3/cms-sys-note": "^10.4 || ^11.5|| ^12.4"
+        "typo3/cms-core": "^10.4 || ^11.5 || ^12.4",
+        "typo3/cms-dashboard": "^10.4 || ^11.5|| ^12.4",
+        "typo3/cms-sys-note": "^10.4 || ^11.5|| ^12.4"
     },
     "autoload": {
-      "psr-4": {
-        "Treupo\\SysNoteWidgets\\": "Classes/"
-      }
+        "psr-4": {
+            "Treupo\\SysNoteWidgets\\": "Classes/"
+        }
     },
     "extra": {
-      "typo3/cms": {
-        "extension-key": "treupo_sys_note_widgets"
-      }
+        "typo3/cms": {
+            "extension-key": "treupo_sys_note_widgets"
+        }
     },
     "config": {
         "allow-plugins": {
             "typo3/class-alias-loader": true,
             "typo3/cms-composer-installers": true
         }
+    },
+    "scripts": {
+        "prepare-release": [
+            "rm -rf .devbox",
+            "rm -rf Tests/",
+            "rm -rf config",
+            "rm docker-compose.yml",
+            "rm .gitignore"
+        ]
     }
 }
