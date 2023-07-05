@@ -13,34 +13,16 @@ use TYPO3\CMS\Fluid\View\StandaloneView;
 class PageOverviewWidget implements WidgetInterface, AdditionalCssInterface
 {
     /**
-     * @var WidgetConfigurationInterface
-     */
-    private $configuration;
-
-    /**
-     * @var ListDataProviderInterface
-     */
-    private $dataProvider;
-
-    /**
-     * @var StandaloneView
-     */
-    private $view;
-
-    /**
      * @var array
      */
     private $options;
 
     public function __construct(
-        WidgetConfigurationInterface $configuration,
-        PageProviderInterface $dataProvider,
-        StandaloneView $view,
+        private readonly WidgetConfigurationInterface $configuration,
+        private readonly PageProviderInterface $dataProvider,
+        private readonly StandaloneView $view,
         array $options = []
     ) {
-        $this->configuration = $configuration;
-        $this->dataProvider = $dataProvider;
-        $this->view = $view;
         $this->options = array_merge(
             [
                 'template' => 'Widget/ExtendedListWidget',
@@ -73,5 +55,9 @@ class PageOverviewWidget implements WidgetInterface, AdditionalCssInterface
         return [
             'EXT:treupo_sys_note_widgets/Resources/Public/Css/widgets.css'
         ];
+    }
+    public function getOptions(): array
+    {
+        return $this->options;
     }
 }

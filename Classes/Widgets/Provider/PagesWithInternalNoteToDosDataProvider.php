@@ -21,19 +21,13 @@ class PagesWithInternalNoteToDosDataProvider implements PageProviderInterface
         $queryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)->getQueryBuilderForTable('sys_note');
 
         $constraints = [
-            $queryBuilder->expr()->orX(
-                $queryBuilder->expr()->eq('category', $queryBuilder->createNamedParameter($category))
-            ),
+            $queryBuilder->expr()->or($queryBuilder->expr()->eq('category', $queryBuilder->createNamedParameter($category))),
         ];
-
-        $items = $queryBuilder
+        
+        return $queryBuilder
             ->select('*')
             ->from('sys_note')
-            ->where(...$constraints)
-            ->orderBy('tstamp', 'DESC')
-            ->execute()
+            ->where(...$constraints)->orderBy('tstamp', 'DESC')->executeQuery()
             ->fetchAllAssociative();
-        
-        return $items;
     }
 }
