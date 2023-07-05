@@ -18,9 +18,9 @@ services:
     tags:
       - name: dashboard.widget
         identifier: 'sys_note_default'
-        groupNames: 'td_sys_note_widgets'
-        title: 'LLL:EXT:td_sys_note_widgets/Resources/Private/Language/locallang.xlf:widget.pagesWithInternalNoteDefault.title'
-        description: 'LLL:EXT:td_sys_note_widgets/Resources/Private/Language/locallang.xlf:widget.pagesWithInternalNoteDefault.description'
+        groupNames: 'treupo_sys_note_widgets'
+        title: 'LLL:EXT:treupo_sys_note_widgets/Resources/Private/Language/locallang.xlf:widget.pagesWithInternalNoteDefault.title'
+        description: 'LLL:EXT:treupo_sys_note_widgets/Resources/Private/Language/locallang.xlf:widget.pagesWithInternalNoteDefault.description'
         iconIdentifier: 'content-note'
         height: 'medium'
         width: 'medium'
@@ -36,9 +36,9 @@ services:
     tags:
       - name: dashboard.widget
         identifier: 'sys_note_instructions'
-        groupNames: 'td_sys_note_widgets'
-        title: 'LLL:EXT:td_sys_note_widgets/Resources/Private/Language/locallang.xlf:widget.pagesWithInternalNoteInstructions.title'
-        description: 'LLL:EXT:td_sys_note_widgets/Resources/Private/Language/locallang.xlf:widget.pagesWithInternalNoteInstructions.description'
+        groupNames: 'treupo_sys_note_widgets'
+        title: 'LLL:EXT:treupo_sys_note_widgets/Resources/Private/Language/locallang.xlf:widget.pagesWithInternalNoteInstructions.title'
+        description: 'LLL:EXT:treupo_sys_note_widgets/Resources/Private/Language/locallang.xlf:widget.pagesWithInternalNoteInstructions.description'
         iconIdentifier: 'content-note'
         height: 'medium'
         width: 'medium'
@@ -54,9 +54,9 @@ services:
     tags:
       - name: dashboard.widget
         identifier: 'sys_note_template'
-        groupNames: 'td_sys_note_widgets'
-        title: 'LLL:EXT:td_sys_note_widgets/Resources/Private/Language/locallang.xlf:widget.pagesWithInternalNoteTemplate.title'
-        description: 'LLL:EXT:td_sys_note_widgets/Resources/Private/Language/locallang.xlf:widget.pagesWithInternalNoteTemplate.description'
+        groupNames: 'treupo_sys_note_widgets'
+        title: 'LLL:EXT:treupo_sys_note_widgets/Resources/Private/Language/locallang.xlf:widget.pagesWithInternalNoteTemplate.title'
+        description: 'LLL:EXT:treupo_sys_note_widgets/Resources/Private/Language/locallang.xlf:widget.pagesWithInternalNoteTemplate.description'
         iconIdentifier: 'content-note'
         height: 'medium'
         width: 'medium'
@@ -72,9 +72,9 @@ services:
     tags:
       - name: dashboard.widget
         identifier: 'sys_note_notes'
-        groupNames: 'td_sys_note_widgets'
-        title: 'LLL:EXT:td_sys_note_widgets/Resources/Private/Language/locallang.xlf:widget.pagesWithInternalNoteNotes.title'
-        description: 'LLL:EXT:td_sys_note_widgets/Resources/Private/Language/locallang.xlf:widget.pagesWithInternalNoteNotes.description'
+        groupNames: 'treupo_sys_note_widgets'
+        title: 'LLL:EXT:treupo_sys_note_widgets/Resources/Private/Language/locallang.xlf:widget.pagesWithInternalNoteNotes.title'
+        description: 'LLL:EXT:treupo_sys_note_widgets/Resources/Private/Language/locallang.xlf:widget.pagesWithInternalNoteNotes.description'
         iconIdentifier: 'content-note'
         height: 'medium'
         width: 'medium'
@@ -90,9 +90,9 @@ services:
     tags:
       - name: dashboard.widget
         identifier: 'sys_note_todos'
-        groupNames: 'td_sys_note_widgets'
-        title: 'LLL:EXT:td_sys_note_widgets/Resources/Private/Language/locallang.xlf:widget.pagesWithInternalNoteToDos.title'
-        description: 'LLL:EXT:td_sys_note_widgets/Resources/Private/Language/locallang.xlf:widget.pagesWithInternalNoteToDos.description'
+        groupNames: 'treupo_sys_note_widgets'
+        title: 'LLL:EXT:treupo_sys_note_widgets/Resources/Private/Language/locallang.xlf:widget.pagesWithInternalNoteToDos.title'
+        description: 'LLL:EXT:treupo_sys_note_widgets/Resources/Private/Language/locallang.xlf:widget.pagesWithInternalNoteToDos.description'
         iconIdentifier: 'content-note'
         height: 'medium'
         width: 'medium'

@@ -10,9 +10,9 @@ call_user_func(static function () {
             '
 module.tx_dashboard {
     view {
-        templateRootPaths.557676000 = EXT:td_sys_note_widgets/Resources/Private/Templates/
-        partialRootPaths.557676000 = EXT:td_sys_note_widgets/Resources/Private/Partials/
-        layoutRootPaths.557676000 = EXT:td_sys_note_widgets/Resources/Private/Layouts/
+        templateRootPaths.557676000 = EXT:treupo_sys_note_widgets/Resources/Private/Templates/
+        partialRootPaths.557676000 = EXT:treupo_sys_note_widgets/Resources/Private/Partials/
+        layoutRootPaths.557676000 = EXT:treupo_sys_note_widgets/Resources/Private/Layouts/
     }
 }'
         );

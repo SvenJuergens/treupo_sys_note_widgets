@@ -8,5 +8,5 @@ Known problems
 
 There are no known problems yet.
 
-Find a list of `open issues on GitLab
-<https://gitlab.kuhlmay.xyz/typo3-extensions/sys_note_widgets/-/issues>`__.
+Find a list of `open issues on GitHub
+<https://github.com/PKuhlmay/treupo_sys_note_widgets/issues>`__.

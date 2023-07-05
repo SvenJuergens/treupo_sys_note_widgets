@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
-	<file t3:id="1582293960" source-language="en" datatype="plaintext" original="EXT:td_sys_note_widgets/Resources/Private/Language/locallang.xlf" date="2020-02-21T14:06:14Z" product-name="sys_note_widgets">
+	<file t3:id="1582293960" source-language="en" datatype="plaintext" original="EXT:treupo_sys_note_widgets/Resources/Private/Language/locallang.xlf" date="2020-02-21T14:06:14Z" product-name="treupo_sys_note_widgets">
 		<header/>
 		<body>
 			<trans-unit id="widget_group.sys_note_widget.title" xml:space="preserve">

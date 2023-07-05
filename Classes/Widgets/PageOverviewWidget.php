@@ -71,7 +71,7 @@ class PageOverviewWidget implements WidgetInterface, AdditionalCssInterface
     public function getCssFiles(): array
     {
         return [
-            'EXT:td_sys_note_widgets/Resources/Public/Css/widgets.css'
+            'EXT:treupo_sys_note_widgets/Resources/Public/Css/widgets.css'
         ];
     }
 }

@@ -1,5 +1,5 @@
 {
-    "name": "treupo/td_sys_note_widgets",
+    "name": "treupo/sys_note_widgets",
     "type": "typo3-cms-extension",
     "description": "Widgets with a list of all sys_note's",
     "homepage": "https://typo3.org",
@@ -22,7 +22,7 @@
     },
     "extra": {
       "typo3/cms": {
-        "extension-key": "td_sys_note_widgets"
+        "extension-key": "treupo_sys_note_widgets"
       }
     },
     "config": {
