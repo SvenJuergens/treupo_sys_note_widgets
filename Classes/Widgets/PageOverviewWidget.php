@@ -17,12 +17,19 @@ class PageOverviewWidget implements WidgetInterface, AdditionalCssInterface
      */
     private $options;
 
+    private WidgetConfigurationInterface $configuration;
+    private PageProviderInterface $dataProvider;
+    private StandaloneView $view;
+
     public function __construct(
-        private readonly WidgetConfigurationInterface $configuration,
-        private readonly PageProviderInterface $dataProvider,
-        private readonly StandaloneView $view,
+        WidgetConfigurationInterface $configuration,
+        PageProviderInterface $dataProvider,
+        StandaloneView $view,
         array $options = []
     ) {
+        $this->configuration = $configuration;
+        $this->dataProvider = $dataProvider;
+        $this->view = $view;
         $this->options = array_merge(
             [
                 'template' => 'Widget/ExtendedListWidget',
