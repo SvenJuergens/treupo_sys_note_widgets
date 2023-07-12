@@ -13,8 +13,14 @@ return static function (RectorConfig $rectorConfig): void {
     $rectorConfig->rule(InlineConstructorDefaultToPropertyRector::class);
     // define sets of rules
    $rectorConfig->sets([
-       LevelSetList::UP_TO_PHP_81,
-       Typo3SetList::TYPO3_104,
-       Typo3SetList::TCA_104
+       Typo3SetList::TYPO3_12,
+       Typo3SetList::TYPOSCRIPT_120,
+       Typo3SetList::TYPOSCRIPT_CONDITIONS_104,
+       LevelSetList::UP_TO_PHP_82,
+       Typo3SetList::TCA_120,
+       Typo3SetList::DATABASE_TO_DBAL,
+       Typo3SetList::EXTBASE_COMMAND_CONTROLLERS_TO_SYMFONY_COMMANDS,
+       Typo3SetList::REGISTER_ICONS_TO_ICON,
+       SetList::CODE_QUALITY,
    ]);
 };
