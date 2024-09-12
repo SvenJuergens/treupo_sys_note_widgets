@@ -1,2 +1,2 @@
 Since TYPO3 v13.3 this widgets will be shipped within the core. So there is no need to develop this extension further.
-See the [Changelog]([https://docs.typo3.org/c/typo3/cms-core/main/en-us/Changelog/12.0/Feature-97326-OpenBackendPageFromAdminPanel.html](https://docs.typo3.org/c/typo3/cms-core/main/en-us/Changelog/13.3/Feature-104844-Dashboard-Sys_note-AddWidgetsForListingAllTheSys_notesInsideTheTYPO3System.html)) for further information.
+See the [Changelog](https://docs.typo3.org/c/typo3/cms-core/main/en-us/Changelog/12.0/Feature-97326-OpenBackendPageFromAdminPanel.html](https://docs.typo3.org/c/typo3/cms-core/main/en-us/Changelog/13.3/Feature-104844-Dashboard-Sys_note-AddWidgetsForListingAllTheSys_notesInsideTheTYPO3System.html)) for further information.
