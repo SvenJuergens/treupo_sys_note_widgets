@@ -14,7 +14,7 @@
             <f:for each="{pages}" as="page">
                 <tr>
                     <td><strong>{page.pid}</strong><br /></td>
-                    <td><strong><f:format.crop maxCharacters="30">{page.subject}</f:format.crop></strong><br /><f:format.crop maxCharacters="50">{page.message}</f:format.crop></td>
+                    <td class="w-50"><strong>{page.subject}</strong><br /><f:format.crop maxCharacters="50">{page.message}</f:format.crop></td>
                     <td><f:format.date format="{dateFormat} {timeFormat}">{page.crdate}</f:format.date></td>
                     <td class="text-right">
                         <f:be.link class="u-dashboard-button dashboard-button" route="web_layout" parameters="{id: page.pid}">
